@@ -6,11 +6,11 @@ In cybersecurity, they are useful for analyzing logs, network traffic, or user b
 Self-attention highlights important tokens or events in a sequence, making detection more interpretable.
 
 ## Attention Layer Mechanism
-![Attention Mechanism](images/  images attention.png)  
+![Attention Mechanism](images/attention.png)  
 The attention layer calculates weights for each input token, emphasizing critical parts of the sequence and suppressing irrelevant ones.
 
 ## Positional Encoding
-![Positional Encoding](images/ images positional_encoding.png)  
+![Positional Encoding](images/positional_encoding.png)  
 Since transformers do not process sequences sequentially, positional encoding adds information about the position of each token in the sequence.
 
 ## Practical Example
