@@ -56,3 +56,23 @@ for i in range(min(6, first_layer_activation.shape[-1])):
     plt.savefig(f'task_1/images/feature_map{i+1}.png', bbox_inches='tight')
     plt.close()  # close figure to avoid overlap
 
+## Feature Maps from First Convolutional Layer
+
+### Feature Map 1
+![Feature Map 1](task_1/images/feature_map1.png)
+
+### Feature Map 2
+![Feature Map 2](task_1/images/feature_map2.png)
+
+### Feature Map 3
+![Feature Map 3](task_1/images/feature_map3.png)
+
+### Feature Map 4
+![Feature Map 4](task_1/images/feature_map4.png)
+
+### Feature Map 5
+![Feature Map 5](task_1/images/feature_map5.png)
+
+### Feature Map 6
+![Feature Map 6](task_1/images/feature_map6.png)
+
