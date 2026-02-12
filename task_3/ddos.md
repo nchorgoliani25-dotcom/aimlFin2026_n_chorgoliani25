@@ -27,3 +27,27 @@ requests_per_min = df.groupby(df['datetime'].dt.floor('min')).size()
 ddos_intervals = requests_per_min[requests_per_min > threshold]
 print(ddos_intervals)
 
+
+> შენიშვნა: სურათს `requests_per_minute.png` გააკეთებ შემდეგი ნაბიჯში.
+
+---
+
+### 3️⃣ ვიზუალიზაცია (Plot) – PNG
+`analysis.py`-ში შეგიძლია დაამატო კოდი, რომ გრაფიკი შენახოს `task_3/images/requests_per_minute.png`:
+
+```python
+import matplotlib.pyplot as plt
+import os
+
+# Create images folder
+os.makedirs('task_3/images', exist_ok=True)
+
+# Plot requests per minute
+plt.figure(figsize=(12,6))
+requests_per_min.plot()
+plt.title('Requests per Minute')
+plt.xlabel('Time')
+plt.ylabel('Number of Requests')
+plt.tight_layout()
+plt.savefig('task_3/images/requests_per_minute.png')
+plt.show()
