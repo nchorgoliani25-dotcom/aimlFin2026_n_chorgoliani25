@@ -51,3 +51,5 @@ plt.ylabel('Number of Requests')
 plt.tight_layout()
 plt.savefig('task_3/images/requests_per_minute.png')
 plt.show()
+
+![Download Visualization](images/download.png)
