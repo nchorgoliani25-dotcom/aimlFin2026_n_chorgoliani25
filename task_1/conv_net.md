@@ -47,12 +47,12 @@ activation_model = Model(inputs=model.input, outputs=layer_outputs)
 activations = activation_model.predict(X[:1])
 first_layer_activation = activations[0]
 
-# Step 5: Save feature maps as PNG
-os.makedirs('images', exist_ok=True)
-plt.figure(figsize=(12,5))
+# Step 5: Save feature maps as PNG in task_1/images/
+os.makedirs('task_1/images', exist_ok=True)
 for i in range(min(6, first_layer_activation.shape[-1])):
-    plt.subplot(1, 6, i+1)
+    plt.figure(figsize=(3,3))
     plt.imshow(first_layer_activation[0, :, :, i], cmap='viridis')
     plt.axis('off')
-    plt.savefig(f'images/feature_map{i+1}.png', bbox_inches='tight')
-plt.show()
+    plt.savefig(f'task_1/images/feature_map{i+1}.png', bbox_inches='tight')
+    plt.close()  # close figure to avoid overlap
+
